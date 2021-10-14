@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/mystyle.css" />
+    <script src="js/myFunctions.js"></script>
   </head>
   <body>
     <h1>Suomi</h1>
+    <p>
+      <label for="en">Etunimi</label> <br />
+      <input type="text" id="en" /> <br />
+      <label for="sn">Sukunimi</label> <br />
+      <input type="text" id="sn" /> <br /><br />
+      <button onclick="login()">Kirjaudu</button>
+    </p>
+    <p id="loginInfo">Tiedot</p>
     <p>Suomen Pääkaupunki on <span class="capital">Helsinki</span></p>
     <div id="cities">
       <h2>
@@ -57,10 +66,4 @@
     <hr />
     <a href="second.html">Tietoa Ruotsista</a>
   </body>
-  <script>
-    function btnClicked() {
-      console.log("klikkasit painiketta");
-      alert("painiketta painettiin");
-    }
-  </script>
 </html>
